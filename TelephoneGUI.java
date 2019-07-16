@@ -20,6 +20,7 @@ public class TelephoneGUI {
         JLabel label = new JLabel("Phone #");
         JTextField tf = new JTextField(11);
         JButton find = new JButton("Find Member");
+        // In charge of causing action when button is clicked.
         find.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 tf.setText("Success!");

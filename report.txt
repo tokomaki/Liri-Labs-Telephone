@@ -1,6 +1,6 @@
 Justin Victoria
 Liri Labs
-Telephone Number GUI
+Telephone Number GUI Task
 
 Approach: Create non-Graphical Interface that gathers input from the user and
           returns accordingly.

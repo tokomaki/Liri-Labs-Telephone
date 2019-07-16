@@ -1,8 +1,8 @@
 /* Justin Victoria
-   Liri Labs
-   Telephone.java: Create a terminal-based program that gathers a valid telephone number and
-   outputs accordingly.
-*/
+ * Liri Labs
+ * Telephone.java: Create a terminal-based program that gathers a valid telephone number and
+ * outputs accordingly.
+ */
 
 import java.util.Scanner;
 
