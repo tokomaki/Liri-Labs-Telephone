@@ -1,0 +1,40 @@
+Justin Victoria
+Liri Labs
+Telephone Number GUI
+
+Approach: Create non-Graphical Interface that gathers input from the user and
+          returns accordingly.
+
+          Use Type checking to ensure that the input is numerical at minimum.
+          Also test length to ensure it is valid
+          Account for the case that the user validly puts 1 before area code.
+
+          Bonus: Use a list or similar structure to ensure that the number is
+          a valid US number.
+
+          Implement the same problem including the GUI.
+
+
+Telephone.java: My terminal-based program that solves the problem at the 
+   required level. My focus was on getting the logic down properly. A problem I
+   thought about was how to deal with an input including dashes such as
+   508-298-4000 and of course, how to deal with non-numerical inputs such as
+   'aocbeu'. I designed the program to continue asking for the proper input if
+   an improper, non-numerical one was given. Then, from there, I held the logic
+   that a valid phone number must have 10 or 11 digits. It is also valid if a
+   phone number is preceded with 1 for US numbers, so I had the program print 
+   'Success!' if either there were 10 digits, or if there were 11, that the 
+   first digit was a 1. Any other length of numbers could not be phone numbers,
+   so I had the program print 'Failure!' in that case.
+
+TelephoneGUI.java: In this program, I attempt to create the proper graphical
+   user interface that properly returns 'Success' upon input of a phone numebr.
+   I do not have much experience with graphics, so I had to use online
+   resources. Learning about the graphics and implementing it took a lot of the
+   time. My main and still current challenge at the moment is bridging the
+   graphical with the logic. I was able to find how to get an action to occur
+   with the clicking of the 'find member' button, but as of right now, the
+   program is still dumb. I need to figure out how to read the proper input
+   in a way that I can print 'Success' only when it fits the conditions
+   demonstrated in my terminal-based program. All in all, its been a good
+   learning experience so far.
