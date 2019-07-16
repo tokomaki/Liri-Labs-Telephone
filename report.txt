@@ -15,15 +15,15 @@ Approach: Create non-Graphical Interface that gathers input from the user and
           Implement the same problem including the GUI.
 
 
-Telephone.java: My terminal-based program that solves the problem at the 
+Telephone.java: My terminal-based program that solves the problem at the
    required level. My focus was on getting the logic down properly. A problem I
    thought about was how to deal with an input including dashes such as
    508-298-4000 and of course, how to deal with non-numerical inputs such as
    'aocbeu'. I designed the program to continue asking for the proper input if
    an improper, non-numerical one was given. Then, from there, I held the logic
    that a valid phone number must have 10 or 11 digits. It is also valid if a
-   phone number is preceded with 1 for US numbers, so I had the program print 
-   'Success!' if either there were 10 digits, or if there were 11, that the 
+   phone number is preceded with 1 for US numbers, so I had the program print
+   'Success!' if either there were 10 digits, or if there were 11, that the
    first digit was a 1. Any other length of numbers could not be phone numbers,
    so I had the program print 'Failure!' in that case.
 
