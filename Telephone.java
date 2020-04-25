@@ -4,6 +4,7 @@
  * outputs accordingly.
  */
 
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 public class Telephone {
@@ -12,9 +13,15 @@ public class Telephone {
         String input = "empty";
 
         while (!input.matches("[0-9]+")) {
-            System.out.print("Please enter a valid US phone number (Numbers Only): ");
-            Scanner in = new Scanner(System.in);
-            input = in.nextLine();
+            try {
+                System.out.print("Please enter a valid US phone number (Numbers Only): ");
+                Scanner in = new Scanner(System.in);
+                input = in.nextLine();
+            }
+            catch(NoSuchElementException e) {
+                System.out.println("No phone number was entered");
+                System.exit(0);
+            }
         }
 
         /* Input is currently a String. Convert to char array to be able to check
