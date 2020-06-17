@@ -1,1 +1,3 @@
 I'm making my first change
+
+Michael made a change
