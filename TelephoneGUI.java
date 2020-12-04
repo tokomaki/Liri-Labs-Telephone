@@ -49,6 +49,9 @@ public class TelephoneGUI {
 
         // Add global panel to the frame.
         frame.getContentPane().add(pane);
+
+        // Centers frame on screen
+        frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
 }
