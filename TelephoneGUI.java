@@ -13,7 +13,7 @@ public class TelephoneGUI {
         // Create the frame.
         JFrame frame = new JFrame("My first GUI.");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(700, 300);
+        frame.setSize(1980, 1080);
 
         // Create the panel on the center and add its components.
         JPanel panel = new JPanel();
@@ -23,7 +23,12 @@ public class TelephoneGUI {
         // In charge of causing action when button is clicked.
         find.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                tf.setText("Success!");
+                if (tf.getText().matches("[0-9]{10}") || tf.getText().matches("1[0-9]{10}")) {
+                    tf.setText("Success!");
+                }
+                else {
+                    tf.setText("Failure!");
+                }
             }
         });
         panel.add(label);
