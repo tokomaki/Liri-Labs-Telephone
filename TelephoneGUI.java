@@ -13,7 +13,7 @@ public class TelephoneGUI {
         // Create the frame.
         JFrame frame = new JFrame("My first GUI.");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(1980, 1080);
+        frame.setSize(700, 300);
 
         // Create the panel on the center and add its components.
         JPanel panel = new JPanel();
